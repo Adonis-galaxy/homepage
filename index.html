@@ -231,69 +231,24 @@
 </body>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        .item{
-            height: 200px;
-            border: solid 1px coral;
-            }
-        .zan{
-            width: 30px;
-            height: 30px;
-            color: white;
-            background-color: black;
-            cursor: pointer;
-            position: relative;
-        }
-    </style>
+    <meta charset="utf-8">
+    <title>Star number</title>
 </head>
 <body>
-<div class="item"><div class="zan">Star</div></div>
-<div class="item"><div class="zan">Star</div></div>
- 
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script>
-    $(function () {
-        $('.zan').click(function () {
-            var tag=document.createElement('span')
-            tag.style.color='green';
-            tag.style.position='absolute';
-            tag.innerHTML='+1'
- 
-            var top=5;
-            var left=5;
-            var fontsize=12;
-            var opacity=1;
- 
-             tag.style.fontSize=fontsize+'px';
-             tag.style.top=top+'px';
-             tag.style.left=left+'px';
-             tag.opacity=opacity;
-             $(this).append(tag);
- 
-            var obj=setInterval(function () {
-                top-=15;
-                left+=5;
-                fontsize+=12;
-                opacity-=0.2;
- 
-                tag.style.fontSize=fontsize+'px';
-                tag.style.top=top+'px';
-                tag.style.left=left+'px';
-                tag.opacity=opacity;
- 
-                if(opacity<0){
-                    clearInterval(obj);
-                    tag.remove();
-                }
-                },100)
-        })
-    })
-</script>
+    <input type="button" id="praise" value="Star(0)">
 </body>
+<script type="text/javascript">
+    function zan(){
+        var number=0;
+        return function(){
+            this.value="Star("+(++number)+")";
+        }
+     }
+    var zz=zan();
+    document.getElementById('praise').onclick=zz;
+</script>
 </html>
 
 </html>
