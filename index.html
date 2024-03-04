@@ -80,7 +80,7 @@
                 Previously, I interened with <a href="https://www.cis.upenn.edu/~jshi/">Prof. Jianbo Shi</a> at <a href="https://www.grasp.upenn.edu/">UPenn GRASP Lab</a>, with <a href="https://xmhe.bitbucket.io/">Prof. Xuming He</a> at <a href="http://plus.sist.shanghaitech.edu.cn/">ShanghaiTech PLUS Group</a>.    
 
                 <p></p>
-                I conduct research on <strong>Multimodal learning</strong> inspired by human learning. Currently, my research interest lies in <strong>>Language for 3D Perception, Manipulation, and Generation</strong>.
+                I conduct research on <strong>Multimodal Learning</strong> inspired by human learning. Currently, my research mainly lies in <strong>Language for 3D Vision (Perception, Manipulation, and Generation)</strong>.
                 <p></p>
                 <a href="CV_Ziyao Zeng.pdf">CV</a> /
                 <!-- <a href="Long CV-Ziyao Zeng.pdf">Long CV</a> / -->
@@ -111,14 +111,15 @@
         <div class="tab-pane fade" id="publication" role="tabpanel" aria-labelledby="publication-tab">
               <h4 style="margin-top: 10px">Research Overview</h4>
               <p>
-                <li>Since the age of 13, deeply touched by <i><a href="https://en.wikipedia.org/wiki/Foundation_(Asimov_novel)">Foundation</a></i> by <a href="https://en.wikipedia.org/wiki/Isaac_Asimov">Isaac Asimov</a>, my dream has been to explore the galaxy. Unable to fulfill this mission with existing technology, I reoriented my goal to create an AI who can think like humans (just like the dream of <a href="https://people.idsia.ch//~juergen/">Prof. Jürgen Schmidhuber</a>), which we call Artificial General Intelligence (AGI) today, and explore the galaxy together. When humans perceive the surrounding environment, we see (2D vision), touch (3D vision), and hear (audio) simultaneously to understand (language). Therefore, AGI’s understanding should likewise be based upon the complementary perception of different modalities. Toward this goal, I conduct research on <strong>Multimodal learning</strong> inspired by human learning. Currently, my research interest lies in <strong>>Language for 3D Perception, Manipulation, and Generation</strong>.
+                <li>Since the age of 13, deeply touched by <i><a href="https://en.wikipedia.org/wiki/Foundation_(Asimov_novel)">Foundation</a></i> by <a href="https://en.wikipedia.org/wiki/Isaac_Asimov">Isaac Asimov</a>, my dream has been to explore the galaxy. Unable to fulfill this mission with existing technology, I reoriented my goal to create an AI who can think like humans (just like the dream of <a href="https://people.idsia.ch//~juergen/">Prof. Jürgen Schmidhuber</a>), which we call Artificial General Intelligence (AGI) today, and explore the galaxy together. When humans perceive the surrounding environment, we see (2D vision), touch (tactile), sense (3D vision), and hear (audio) simultaneously to understand (language). Therefore, AGI’s understanding should likewise be based upon the complementary learning of different modalities. 
+                <p></p>
+                <li>Recently, human-like AI perception has come closer to reality. Large-scale foundation models pre-trained with multimodal data provide promising unified frameworks for Multimodal Learning. In particular, Contrastive Language-Image Pretraining  (CLIP) trains both an image and text encoder, and conducts contrastive learning in feature space. It simulates the process of parents pointing to objects to assist children in recognizing them. In this simple relationship, children not only learn to classify objects but also to segment them without any pixel-wise mask annotations or box annotations.</li>
+                <p></p>
+                <li><a href="https://arxiv.org/abs/2207.01077">DepthCLIP</a> I directed, expanding upon CLIP, reveals that humans learn to predict depth not by pixel-wise depth annotation, but by relative depth semantics. Children are taught “this tree is far, and that bus is close.” Consequently, they build a semantic depth understanding of seen monocular images, indicating which object is near, and which object is far. We found that CLIP also learns from a mutual understanding of semantic language-image concepts, and thus has the same ability to distinguish relative depth as humans, and can conduct zero-shot training-free monocular depth estimation. <a href="">WorDepth</a>, on the other hand, improves monocular depth estimation models by incorporating human language guidance into training, since language can provide the depth model with geometry priors that are associated with semantics but not explicitly addressed in depth estimation datasets.</li>
+                <p></p>
+                Going forward, I conduct research on <strong>Multimodal Learning</strong> inspired by human learning, specifically <strong>Language for 3D Vision (Perception, Manipulation, and Generation)</strong>.
+                <p></p>
 
-                <p></p>
-                <li>Recently, human-like AI perception has come closer to reality. Large-scale foundation models pre-trained with multimodal data provide promising unified frameworks for Multimodal Perception. In particular, Contrastive Language-Image Pretraining  (CLIP) trains both an image and text encoder, and conducts contrastive learning in feature space. It simulates the process of parents pointing to objects to assist children in recognizing them. In this simple relationship, children not only learn to classify objects but also to segment them without any pixel-wise mask annotations or box annotations. In light of this insight, I have become passionate about realizing the perception potential of CLIP for other visual tasks.</li>
-                <p></p>
-                <li><a href="https://arxiv.org/abs/2207.01077">DepthCLIP</a>, which I directed as a co-first author, expanding upon CLIP, reveals that humans learn to predict depth not by pixel-wise depth annotation, but by relative depth semantics. A child is taught “this tree is far, and that bus is close.” Consequently, he or she builds a semantic depth understanding of seen monocular images, indicating which object is near, and which object is far. Together with my collaborators, I found that CLIP also learns from a mutual understanding of semantic language-image concepts, and thus has the same ability to distinguish relative depth as humans. Given such insight, to conduct zero-shot training-free monocular depth estimation, I leveraged CLIP to obtain the semantic depth response of monocular images, then designed a projection scheme to obtain the quantified depth prediction. Surprisingly, DepthCLIP surpasses most existing unsupervised methods and even approaches early fully-supervised networks, which demonstrates that AI could acquire competent perception by simulating human perception. </li>
-          
-                <p></p>
               </p>
 
               <!-- Publications -->
@@ -130,9 +131,10 @@
                 <div class="resume-content mr-auto">
                   <img src="research/icon/WorDepth.png" alt="PontTrust" align="middle" style="width: 70%;display:block;margin-left: auto;margin-right: auto;">
                   <br />
-                  <strong><papertitle class=blue><a href="https://arxiv.org/abs/2401.18084">Binding Touch to Everything: Learning Unified Multimodal Tactile Representations</a></papertitle></strong>
+                  <strong><papertitle class=blue><a href="">Binding Touch to Everything: Learning Unified Multimodal Tactile Representations</a></papertitle></strong>
                   <br><strong>Ziyao Zeng</strong>, Hyoungseob Park, Fengyu Yang, Daniel Wang, Stefano Soatto, Dong Lao, Alex Wong<br>
                   <span>CVPR 2024</span><br>
+                  <a href="">Code</a>
                 </div>
               </div>
               <br>
@@ -296,14 +298,14 @@
                   <img style="width:32%;max-width:100%" align="middle" src="images/lakedistrict/DSC_1442.JPG">
                   <li>In 2019, I have cycled cross Tibet for 28 days from <a href="https://sco.wikipedia.org/wiki/Chengdu">Chengdu</a> to <a href="https://de.wikipedia.org/wiki/Lhasa">Lhasa</a> for 2135 km.</li>
                   <p></p>
-                  <img style="width:97%;max-width:100%" align="middle" src="images/qixingluxian.jpg">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/zhongdian.jpg">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/mila.jpg">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/chuanzang3.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/bingchuan.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/3838.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/chuanzang1.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/dongda.jpg">
+                  <img style="width:97%;max-width:100%" align="middle" src="images/318/qixingluxian.jpg">
+                  <img style="width:32%;max-width:100%" align="middle" src="images/318/zhongdian.jpg">
+                  <img style="width:32%;max-width:100%" align="middle" src="images/318/mila.jpg">
+                  <img style="width:32%;max-width:100%" align="middle" src="images/318/chuanzang3.jpg">
+                  <img style="width:24%;max-width:100%" align="middle" src="images/318/bingchuan.jpg">
+                  <img style="width:24%;max-width:100%" align="middle" src="images/318/3838.jpg">
+                  <img style="width:24%;max-width:100%" align="middle" src="images/318/chuanzang1.jpg">
+                  <img style="width:24%;max-width:100%" align="middle" src="images/318/dongda.jpg">
                   <p></p>
                   <li>In 2022, I have cycled cross Tibet and Xinjiang for 1 month from <a href=https://en.wikipedia.org/wiki/%C3%9Cr%C3%BCmqi">Ürümqi</a> to <a href="https://de.wikipedia.org/wiki/Lhasa">Lhasa</a> for 5000 km, with about 2000 km cycling at an average altitude of 4500 m.</li>
                   <p></p>
@@ -345,11 +347,11 @@
 
                   <p></p>
                   <li>My other photos regarding adventures.</li>
-                  <img style="width:24%;max-width:100%" align="middle" src="images/zengzy.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/cover.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/dongshan.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/changsha.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/meili.jpg">
+                  <img style="width:24%;max-width:100%" align="middle" src="images/others/zengzy.jpg">
+                  <img style="width:24%;max-width:100%" align="middle" src="images/others/cover.jpg">
+                  <img style="width:24%;max-width:100%" align="middle" src="images/others/dongshan.jpg">
+                  <img style="width:24%;max-width:100%" align="middle" src="images/others/changsha.jpg">
+                  <img style="width:24%;max-width:100%" align="middle" src="images/others/meili.jpg">
                   <p></p>
                   
 
