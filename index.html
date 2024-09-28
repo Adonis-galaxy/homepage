@@ -40,8 +40,8 @@
 
     <div class="container col-xs-12 col-sm-8 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 col-sm-offset-2 p-0">
 
-        <h1 id = "myName" align ="center">Ziyao
-            <span class="text-primary">Zeng</span> (曾子尧)
+        <h1 id = "myName" align ="center">Ziyao (Adonis)
+            <span class="text-primary">Zeng</span> 曾子尧
         </h1>
 <!-- Bottons -->
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -73,7 +73,7 @@
               <p align>
                 <!-- <h4 style="margin-top: 10px">Starting AI-Scientist with Enterprise</h4>    -->
 
-                I'm a first-year Ph.D. student in Computer Science (2023 - [Expected] 2028) at <a href="https://www.yale.edu/">Yale University</a>, supervised by <a href="https://www.cs.yale.edu/homes/wong-alex/">Prof. Alex Wong</a>. Previous to that, I obtained my B.Eng. in Computer Science (2019 - 2023) at <a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University</a>, minor in <a href="https://sem.shanghaitech.edu.cn/sem_en/2017/0724/c3725a29609/page.htm">Innovation and Entrepreneurship</a>.
+                I'm a second-year Ph.D. student in Computer Science (2023 - [Expected] 2028) at <a href="https://www.yale.edu/">Yale University</a>, supervised by <a href="https://www.cs.yale.edu/homes/wong-alex/">Prof. Alex Wong</a>. Previous to that, I obtained my B.Eng. in Computer Science (2019 - 2023) at <a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University</a>, minor in <a href="https://sem.shanghaitech.edu.cn/sem_en/2017/0724/c3725a29609/page.htm">Innovation and Entrepreneurship</a>.
 
                 <p></p>
 
@@ -87,13 +87,13 @@
                 <a href="https://github.com/Adonis-galaxy">GitHub</a> /
                 <a href="http://vision.cs.yale.edu/members/ziyao-zeng.html">Yale Vision Lab</a>
                 <p></p>
-                Reviewer: CVPR 2022, ICCV 2023, ACM MM 2023, ICASSP 2024, ECCV 2024, NeurIPS 2024, ICPR 2024, ACCV 2024, TCSVT (2024)
+                Reviewer: CVPR 2022, ICCV 2023, ACM MM 2023, ICASSP 2024, ECCV 2024, NeurIPS 2024, ICPR 2024, ACCV 2024, TCSVT (2024), ICLR 2025, ICASSP 2025
                 <p></p>
                 Email: ziyao.zeng@@yale.edu
                 <p></p>
                 <strong>I am actively looking for research internship next summer (2025), and all kinds of reviewing opportunities. Feel free to drop me an email if you are interested!</strong>
                 <p></p>
-                <strong>Also, feel free to reach out for all kinds of collaborations, entrepreneurship, questions, or to connect on WeChat~</strong>
+                <strong>Feel free to reach out for collaborations, entrepreneurship, questions, or to connect on WeChat~</strong>
 
 
             </td>
@@ -107,20 +107,16 @@
         </table>
         <br>
         <p id = "linkToJiarui">Website format from <a href="https://www.cs.utexas.edu/~zhouxy/#publication">Xingyi Zhou</a>.</p>
-        <p align="center"> Last updated June 2024</p>  <!-- Time -->
+        <p align="center"> Last updated Sept. 2024</p>  <!-- Time -->
         </div>
 
         <!-- Research -->
         <div class="tab-pane fade" id="publication" role="tabpanel" aria-labelledby="publication-tab">
               <h4 style="margin-top: 10px">Research Overview</h4>
               <p>
-                <li>Since the age of 13, deeply touched by <i><a href="https://en.wikipedia.org/wiki/Foundation_(Asimov_novel)">Foundation</a></i> by <a href="https://en.wikipedia.org/wiki/Isaac_Asimov">Isaac Asimov</a>, my dream has been to explore the galaxy. Unable to fulfill this mission with existing technology, I reoriented my goal to create an AI who can think like humans (just like the dream of <a href="https://people.idsia.ch//~juergen/">Prof. Jürgen Schmidhuber</a>), which we call Artificial General Intelligence (AGI) today, and explore the galaxy together. When humans perceive the surrounding environment, we see (2D vision), touch (tactile), wander (3D vision), and hear (audio) simultaneously to understand (neural signal) and interpret (language). Therefore, AGI’s understanding should likewise be based upon the complementary learning of different modalities.
+                <li>Since the age of 13, deeply touched by <i><a href="https://en.wikipedia.org/wiki/Foundation_(Asimov_novel)">Foundation</a></i> by <a href="https://en.wikipedia.org/wiki/Isaac_Asimov">Isaac Asimov</a>, my dream has been to create an AI who can think like humans (just like the dream of <a href="https://people.idsia.ch//~juergen/">Prof. Jürgen Schmidhuber</a>). When humans perceive the surrounding environment, we see (2D vision), touch (tactile), wander (3D vision), and hear (audio) simultaneously to understand (neural signal) and interpret (language). Therefore, I conduct research on <strong>Multimodal Embodied AI</strong>. My research vision is to empower embodied AI with multimodal sensing, and can leverage pre-trained multimodal representations, to interact with the physical world as humans do.
                 <p></p>
-                <li>Recently, human-like AI perception has come closer to reality. Large-scale foundation models pre-trained with multimodal data provide promising unified frameworks for Multimodal Learning. In particular, Contrastive Language-Image Pretraining  (CLIP) trains both an image and text encoder, and conducts contrastive learning in feature space. It simulates the process of parents pointing to objects to assist children in recognizing them. In this simple relationship, children not only learn to classify objects but also to segment them without any pixel-wise mask annotations or box annotations.</li>
-                <p></p>
-                <li><a href="https://arxiv.org/abs/2207.01077">DepthCLIP</a> I directed, expanding upon CLIP, reveals that humans learn to predict depth not by pixel-wise depth annotation, but by relative depth semantics. Children are taught “this tree is far, and that bus is close.” Consequently, they build a semantic depth understanding of seen monocular images, indicating which object is near, and which object is far. We found that CLIP also learns from a mutual understanding of semantic language-image concepts, and thus has the same ability to distinguish relative depth as humans, and can conduct zero-shot training-free monocular depth estimation. <a href="">WorDepth</a>, on the other hand, improves monocular depth estimation models by incorporating human language guidance into training, since language can provide the depth model with geometry priors that are associated with semantics but not explicitly addressed in depth estimation datasets.</li>
-                <p></p>
-                Going forward, I conduct research on <strong>Multimodal Learning</strong> inspired by human learning, specifically <strong>Language for 3D Vision (Perception, Reconstruction, and Generation)</strong>.
+                 Specifically, I conduct research on <strong>Language for 3D Vision (Perception, Reconstruction, and Generation)</strong>. Given one language description, one can easily imagine what this scene could look like, so language could easily be interpreted as a condition to generate and manipulate 3D scenes in a controllable manner. On the other hand, language description could serve as a prior that is specific for a given scene to enhance 3D reconstruction by resolving scale ambiguity. Language description itself can also be used to tell ordinal relationships between different objects, so that to infer their depth. The use of language descriptions, which is invariant to nuisance variability (e.g., illumination, occlusion, viewpoints in images), provides extra robust features to assist models’ generalization. Practically, language is arguably cheaper to obtain than range measurements (e.g., from lidar, radar).
                 <p></p>
 
               </p>
@@ -129,6 +125,21 @@
               <h4>Publications</h4>
               (* indicates equal contributions)
               <h5>2024</h5>
+
+              <hr>
+              <div class="resume-item d-flex flex-column flex-md-row">
+                <div class="resume-content mr-auto">
+                  <img src="research/icon/RSA.png" alt="PontTrust" align="middle" style="width: 70%;display:block;margin-left: auto;margin-right: auto;">
+                  <br />
+                  <strong><papertitle class=blue><a href="">RSA: Resolving Scale Ambiguities in Monocular Depth Estimators through Language Descriptions</a></papertitle></strong>
+                  <br><strong>Ziyao Zeng</strong>, Yangchao Wu, Hyoungseob Park, Daniel Wang, Fengyu Yang, Stefano Soatto, Dong Lao, Byung-Woo Hong, Alex Wong<br>
+                  <span>NeurIPS 2024</span><br>
+                </div>
+              </div>
+              <br>
+
+
+
               <hr>
               <div class="resume-item d-flex flex-column flex-md-row">
                 <div class="resume-content mr-auto">
