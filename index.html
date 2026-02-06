@@ -1,533 +1,479 @@
-
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/Yale.png">
+  <title>Ziyao Zeng</title>
 
-  <head>
-    <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="images/Yale.png">
-  	<!-- <meta charset="utf-8"> -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-    <style type="text/css">
-      a:link {
-        color:rgb(0, 47, 164);
-        text-decoration:none;
-      }
-      a:visited {
-        color:rgb(0, 47, 164);
-        text-decoration:none;
-      }
-      a:hover {
-        color:rgb(0, 47, 164);
-        text-decoration:none;
-      }
-      a:active {
-        color:rgb(0, 47, 164);
-        text-decoration:none;
-      }
-
-      .highlight-entry {
-  background-color: #fffdce; /* Light orange */
-  padding: 10px;
-  border-radius: 5px;
-}
-
-
-
-    </style>
-    <title>Ziyao Zeng</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-
-  <body>
-
-    <div class="container col-xs-12 col-sm-8 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 col-sm-offset-2 p-0">
-
-        <h1 id = "myName" align ="center">Ziyao (Adonis)
-            <span class="text-primary">Zeng</span> 曾子尧
-        </h1>
-<!-- Bottons -->
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="publication-tab" data-toggle="tab" href="#publication" role="tab" aria-controls="publication" aria-selected="false">Research</a>
-        </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" id="enterprise-tab" data-toggle="tab" href="#enterprise" role="tab" aria-controls="enterprise" aria-selected="false">Enterprise</a>
-        </li> -->
-        <li class="nav-item">
-          <a class="nav-link" id="adventure-tab" data-toggle="tab" href="#adventure" role="tab" aria-controls="adventure" aria-selected="false">Adventure</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="others-tab" data-toggle="tab" href="#others" role="tab" aria-controls="others" aria-selected="false">Others</a>
-        </li>
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="nav-container">
+      <div class="nav-brand">Ziyao Zeng</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#others" class="nav-link">Others</a></li>
       </ul>
-      <div class="tab-content" id="nav-tabContent">
-<!-- Main Body -->
-  <!-- Introduction -->
-    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    </div>
+  </nav>
 
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="name-main">Ziyao (Adonis) Zeng</span>
+            <!-- <span class="name-accent"></span> -->
+            <span class="name-chinese">曾子尧</span>
+          </h1>
 
-        <table>
-          <tr>
-            <td width = "62%">
+          <p class="hero-subtitle">
+            Ph.D. Student in Computer Science<br>
+            <span class="institution">Yale University</span>
+          </p>
 
-                <!-- <h4 style="margin-top: 10px">Starting AI-Scientist with Enterprise</h4>    -->
+          <div class="hero-description">
+            <p>I'm a third-year Ph.D. student in Computer Science (2023 - [Expected] 2027) at <a href="https://www.yale.edu/">Yale University</a>. Previous to that, I obtained my B.Eng. in Computer Science (2019 - 2023) at <a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University</a>, minor in <a href="https://sem.shanghaitech.edu.cn/sem_en/2017/0724/c3725a29609/page.htm">Innovation and Entrepreneurship</a>.</p>
 
-                I'm a third-year Ph.D. student in Computer Science (2023 - [Expected] 2027) at <a href="https://www.yale.edu/">Yale University</a>. Previous to that, I obtained my B.Eng. in Computer Science (2019 - 2023) at <a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University</a>, minor in <a href="https://sem.shanghaitech.edu.cn/sem_en/2017/0724/c3725a29609/page.htm">Innovation and Entrepreneurship</a>.
-                <p></p>
-                I conduct research on <strong>Multimodal Learning</strong> inspired by human cognition towards <strong>Multimodal Agentic AI</strong>, especially <strong>vision-language models</strong> and <strong>spatial understanding</strong>. My line of work in <em>“Language for 3D Vision”</em> explores <u>how vision-language models can perceive and understand the world like humans do</u>. My expertise lies in vision-language models, large-language models, diffusion models, multimodal learning, and 2D/3D computer vision.
-
-                <p></p>
-
-                I am fortunate to work with many excellent collaborators:
-                <ul>
-                  <li>
-                    <a href="https://oraziogallo.github.io/">Dr. Orazio Gallo</a>, <a href="https://suhangpro.github.io/">Dr. Hang Su</a>, <a href="https://www.jindongjiang.me/">Dr. Jindong Jiang</a>, <a href="https://research.nvidia.com/person/abhishek-badki">Dr. Abhishek Badki</a>, and <a href="https://sifeiliu.net/">Dr. Sifei Liu</a> at <a href="https://www.nvidia.com/en-us/research/">Nvidia Research</a>.
-                  </li>
-                  <li>
-                    <a href="https://www.cs.yale.edu/homes/wong-alex/">Prof. Alex Wong</a>, <a href="https://donglao.github.io/">Prof. Dong Lao</a>, <a href="https://www.image.cau.ac.kr/people/director">Prof. Byung-Woo Hong</a>, and <a href="https://web.cs.ucla.edu/~soatto/">Prof. Stefano Soatto</a> at <a href="http://vision.cs.yale.edu/members/ziyao-zeng.html">Yale Vision Lab</a>.
-                  </li>
-                  <li>
-                    <a href="https://www.cis.upenn.edu/~jshi/">Prof. Jianbo Shi</a> and <a href="https://zrrskywalker.github.io/">Dr. Renrui Zhang</a> at <a href="https://www.grasp.upenn.edu/">UPenn GRASP Lab</a>.
-                  </li>
-                  <li>
-                    <a href="https://xmhe.bitbucket.io/">Prof. Xuming He</a> and <a href="https://gaozhitong.github.io/">Zhitong Gao</a> at <a href="http://plus.sist.shanghaitech.edu.cn/">ShanghaiTech PLUS Group</a>
-                  </li>
-                  <li>
-                    I was also fortunate to intern at <a href="https://www.shlab.org.cn/">Shanghai AI Lab</a> and <a href="https://www.uisee.com/en/">UISEE</a> during my undergraduate studies.
-                  </li>
-                </ul>
-                <p></p>
-                <!-- <a href="Long CV-Ziyao Zeng.pdf">Long CV</a> / -->
-                <strong>Links:</strong>
-                <a href="https://scholar.google.com/citations?hl=en&user=FYL2DYEAAAAJ">Google Scholar</a> /
-                <a href="http://www.linkedin.com/in/ziyao-zeng-52372a29b">Linkedn</a> / 
-                <a href="https://github.com/Adonis-galaxy">GitHub</a>
-                <p></p>
-                <!-- Reviewer: CVPR 2022, ICCV 2023, ACM MM 2023, ICASSP 2024, ECCV 2024, NeurIPS 2024, ICPR 2024, ACCV 2024, TCSVT (2024), ICLR 2025, ICASSP 2025, AISTATS 2025, CVPR 2025 -->
-                <!-- Reviewer: CVPR, ICCV, ECCV, NeurIPS, ICLR, ICML, ACM Multimedia, AISTATS, ICASSP -->
-                <strong>Reviewer Services:</strong> CVPR (2022, 2025 <strong>[Outstanding Reviewer]</strong>, 2026), ICCV (2023, 2025), ECCV (2024), ICML (2025), ICLR (2025, 2026), NeurIPS (2024, 2025), ACM MM (2023, 2025), AISTATS (2024, 2025), ICASSP (2024, 2025), TCSVT (journal)
-
-                <p></p>
-                <strong>Email:</strong> ziyao.zeng (at) yale.edu
-                <p></p>
-                <!-- <strong>Feel free to reach out for collaborations, entrepreneurship, questions, or to connect on WeChat~</strong> -->
-
-
-            </td>
-            <td width = "1%">
-            </td>
-            <td width = "30%">
-              <img src="images/cover_full_body.jpg" alt="PontTrust" align="middle" style="width: 100%;">
-            </td>
-        </tr>
-
-        </table>
-        <br>
-        <p id = "linkToJiarui">Website format from <a href="https://www.cs.utexas.edu/~zhouxy/#publication">Xingyi Zhou</a>.</p>
-        <p align="center"> Last updated Nov. 2025</p>  <!-- Time -->
-        </div>
-
-        <!-- Research -->
-        <div class="tab-pane fade" id="publication" role="tabpanel" aria-labelledby="publication-tab">
-              <h4 style="margin-top: 10px">Research Overview</h4>
-              <p>
-                <li>Since the age of 13, deeply touched by <i><a href="https://en.wikipedia.org/wiki/Foundation_(Asimov_novel)">Foundation</a></i> by <a href="https://en.wikipedia.org/wiki/Isaac_Asimov">Isaac Asimov</a>, my dream has been to create an AI who can think like humans (just like the dream of <a href="https://people.idsia.ch//~juergen/">Prof. Jürgen Schmidhuber</a>). When humans perceive the surrounding environment, we see (2D vision), hear (audio), feel (tactile), and interact (3D vision) simultaneously to reason (language) and understand (neural signal) the world. Therefore, I conduct research on <strong>Multimodal Learning</strong> towards <strong>Multimodal Agentic AI</strong>. My research vision is to empower agentic AI with multimodal sensing and multimodal representations, enabling it to perceive, reason, understand, and interact with both the digital and physical worlds like humans do.</li>
-                <p></p>
-                <li>Specifically, my line of work in <em>“Language for 3D Vision”</em> (DepthCLIP, PointCLIPv2, WorDepth, RSA, Iris) explores <u>how vision-language models can perceive and understand the world like humans do</u>. </li>
-                 <!-- <li>Specifically, I conduct research on <strong>Language for 3D Vision</strong> (Perception and Reconstruction). Given one language description, one can easily imagine what this scene could look like, so language could easily be interpreted as a condition to generate and manipulate 3D scenes in a controllable manner. On the other hand, language description could serve as a prior that is specific for a given scene to enhance 3D reconstruction by resolving scale ambiguity. Language description itself can also be used to tell ordinal relationships between different objects, so that to infer their depth. The use of language descriptions, which is invariant to nuisance variability (e.g., illumination, occlusion, viewpoints in images), provides extra robust features to assist models’ generalization. Practically, language is arguably cheaper to obtain than range measurements (e.g., from lidar, radar).</li>
-
-                 <li>Recently, I am exploring <strong>3D Vision for Langauge</strong>, by internalizing 3D Vision models into the Vision-Language models. In the next stage of my research, I aim to extend my current work toward downstream applications, like Vision-Language-Action models for robotic manipulation, with a focus on real-world scenarios such as visual CoT reasoning, implicit 3D reconstruction, and streaming execution. -->
-                <p></p>
-
-              </p>
-
-              <!-- Publications -->
-              <h4>Publications</h4>
-              <div class="highlight-entry">Selected publications are highlighted.</div>
-              (* indicates equal contributions)
-              <h5>2025</h5>
-              <hr>
-              <div class="resume-item d-flex flex-column flex-md-row">
-                <div class="resume-content mr-auto">
-                  <img src="research/icon/Coffee.png" alt="PontTrust" align="middle" style="width: 70%;display:block;margin-left: auto;margin-right: auto;">
-                  <br/>
-                  <div class="highlight-entry">
-                  <strong><papertitle class=blue><a href="https://arxiv.org/abs/2511.14113">Coffee: Controllable Diffusion Fine-tuning</a></papertitle></strong>
-                  <br><strong>Ziyao Zeng</strong>, Jingcheng Ni, Ruyi Liu, Alex Wong<br>
-                  <span>arXiv technical report, 2025</span>
-                  </div>
-                </div>
-              </div>
-              <br>
-
-              <hr>
-              <div class="resume-item d-flex flex-column flex-md-row">
-                <div class="resume-content mr-auto">
-                  <img src="research/icon/ETA.png" alt="PontTrust" align="middle" style="width: 70%;display:block;margin-left: auto;margin-right: auto;">
-                  <br />
-                  <strong><papertitle class=blue><a href="https://arxiv.org/abs/2508.05989">ETA: Energy-based Test-time Adaptation for Depth Completion</a></papertitle></strong>
-                  <br>Younjoon Chung*, Hyoungseob Park*, Patrick Rim*, Xiaoran Zhang, Jihe He, <strong>Ziyao Zeng</strong>, Safa Cicek, Byung-Woo Hong, James S. Duncan, Alex Wong<br>
-                  <span>ICCV 2025</span>
-                </div>
-              </div>
-              <br>
-
-              <hr>
-              <div class="resume-item d-flex flex-column flex-md-row">
-                <div class="resume-content mr-auto">
-                  <img src="research/icon/ProtoDepth.png" alt="PontTrust" align="middle" style="width: 70%;display:block;margin-left: auto;margin-right: auto;">
-                  <br />
-                  <strong><papertitle class=blue><a href="https://arxiv.org/abs/2503.12745">ProtoDepth: Unsupervised Continual Depth Completion with Prototypes</a></papertitle></strong>
-                  <br>Patrick Rim, Hyoungseob Park, S. Gangopadhyay, <strong>Ziyao Zeng</strong>, Younjoon Chung, Alex Wong<br>
-                  <span>CVPR 2025</span><br>
-                  <a href="https://protodepth.github.io/">project page</a>, <a href="https://github.com/patrickqrim/ProtoDepth">code</a>
-                </div>
-              </div>
-              <br>
-
-              <hr>
-              <div class="resume-item d-flex flex-column flex-md-row">
-                <div class="resume-content mr-auto">
-                  <img src="research/icon/HOMER.png" alt="PontTrust" align="middle" style="width: 70%;display:block;margin-left: auto;margin-right: auto;">
-                  <br />
-                  <strong><papertitle class=blue><a href="https://arxiv.org/abs/2501.17636">HOMER: Homography-Based Efficient Multi-view 3D Object Removal</a></papertitle></strong>
-                  <br>Jingcheng Ni*, Weiguang Zhao*, Daniel Wang, <strong>Ziyao Zeng</strong>, Chenyu You, Alex Wong, Kaizhu Huang<br>
-                  <span>arXiv technical report, 2025</span>
-                </div>
-              </div>
-              <br>
-
-
-              <h5>2024</h5>
-              <hr>
-                <div class="resume-content mr-auto">
-                  <img src="research/icon/Iris.png" alt="PontTrust" align="middle" style="width: 70%;display:block;margin-left: auto;margin-right: auto;">
-                  <br />
-                  <div class="highlight-entry">
-                    <strong><papertitle class=blue><a href="https://www.arxiv.org/abs/2411.16750">Iris: Integrating Language into Diffusion-based Monocular Depth Estimation</a></papertitle></strong>
-                    <br><strong>Ziyao Zeng*</strong>, Jingcheng Ni*, Daniel Wang, Patrick Rim, Younjoon Chung, Fengyu Yang, Byung-Woo Hong, Alex Wong<br>
-                    <span>arXiv technical report, 2024</span> | <a href="https://necv2025.github.io/">NECV 2025 Oral Presentation (18.75%)</a><br>
-                  </div>
-                </div>
-              <br>
-
-
-              <hr>
-                <div class="resume-content mr-auto">
-                  <img src="research/icon/RSA.png" alt="PontTrust" align="middle" style="width: 70%;display:block;margin-left: auto;margin-right: auto;">
-                  <br />
-                  <div class="highlight-entry">
-                    <strong><papertitle class=blue><a href="http://arxiv.org/abs/2410.02924">RSA: Resolving Scale Ambiguities in Monocular Depth Estimators through Language Descriptions</a></papertitle></strong>
-                    <br><strong>Ziyao Zeng</strong>, Yangchao Wu, Hyoungseob Park, Daniel Wang, Fengyu Yang, Stefano Soatto, Dong Lao, Byung-Woo Hong, Alex Wong<br>
-                    <span>NeurIPS 2024</span><br>
-                    <a href="https://github.com/Adonis-galaxy/RSA">code</a>
-                  </div>
-                </div>
-              <br>
-
-
-
-              <hr>
-              <div class="resume-item d-flex flex-column flex-md-row">
-                <div class="resume-content mr-auto">
-                  <img src="research/icon/NeuroBind.png" alt="PontTrust" align="middle" style="width: 70%;display:block;margin-left: auto;margin-right: auto;">
-                  <br />
-                  <strong><papertitle class=blue><a href="https://arxiv.org/abs/2407.14020">NeuroBind: Towards Unified Multimodal Representations for Neural Signals</a></papertitle></strong>
-                  <br>Fengyu Yang*, Chao Feng*, Daniel Wang*, Tianye Wang, <strong>Ziyao Zeng</strong>, Zhiyang Xu, Hyoungseob Park, Pengliang Ji, Hanbin Zhao, Yuanning Li, Alex Wong<br>
-                  <span>arXiv technical report, 2024</span><br>
-                </div>
-              </div>
-              <br>
-
-
-              <h5>2023</h5>
-              <hr>
-                <div class="resume-content mr-auto">
-                  <img src="research/icon/WorDepth.png" alt="PontTrust" align="middle" style="width: 70%;display:block;margin-left: auto;margin-right: auto;">
-                  <br />
-                  <div class="highlight-entry">
-                    <strong><papertitle class=blue><a href="https://arxiv.org/abs/2404.03635">WorDepth: Variational Language Prior for Monocular Depth Estimation</a></papertitle></strong>
-                    <br><strong>Ziyao Zeng</strong>, Daniel Wang, Fengyu Yang, Hyoungseob Park, Yangchao Wu, Stefano Soatto, Byung-Woo Hong, Dong Lao, Alex Wong<br>
-                    <span>CVPR 2024</span><br>
-                    <a href="https://github.com/Adonis-galaxy/WorDepth">code</a>
-                  </div>
-                </div>
-              <br>
-
-
-              <hr>
-              <div class="resume-item d-flex flex-column flex-md-row">
-                <div class="resume-content mr-auto">
-                  <img src="research/icon/UniTouch.png" alt="PontTrust" align="middle" style="width: 70%;display:block;margin-left: auto;margin-right: auto;">
-                  <br />
-                  <strong><papertitle class=blue><a href="https://arxiv.org/abs/2401.18084">Binding Touch to Everything: Learning Unified Multimodal Tactile Representations</a></papertitle></strong>
-                  <br>Fengyu Yang*, Chao Feng*, Ziyang Chen*, Hyoungseob Park, Daniel Wang, Yiming Dou, <strong>Ziyao Zeng</strong>, Xien Chen, Rit Gangopadhyay, Andrew Owens, Alex Wong<br>
-                  <span>CVPR 2024</span><br>
-                  <a href="https://cfeng16.github.io/UniTouch/">project page</a>, <a href="https://github.com/cfeng16/UniTouch">code</a>
-                </div>
-              </div>
-              <br>
-
-
-              <h5>2022</h5>
-              <hr>
-                <div class="resume-content mr-auto">
-                  <img src="research/icon/PointCLIPv2.png" alt="PontTrust" align="middle" style="width: 70%;display:block;margin-left: auto;margin-right: auto;">
-                  <br />
-                  <div class="highlight-entry">
-                    <strong><papertitle class=blue><a href="https://arxiv.org/abs/2211.11682">PointCLIP V2: Prompting CLIP and GPT for Powerful 3D Open-world Learning</a></papertitle></strong>
-                    <br>Xiangyang Zhu*, Renrui Zhang*, Bowei He, Ziyu Guo, <strong>Ziyao Zeng</strong>, Zipeng Qin, Shanghang Zhang, Peng Gao<br>
-                    <span>ICCV 2023</span><br>
-                    <a href="https://github.com/yangyangyang127/PointCLIP_V2">code</a>
-                  </div>
-                </div>
-              <br>
-
-
-              <hr>
-              <div class="resume-item d-flex flex-column flex-md-row">
-                <div class="resume-content mr-auto">
-                  <img src="research/icon/iQuery.png" alt="PontTrust" align="middle" style="width: 70%;display:block;margin-left: auto;margin-right: auto;">
-                  <br />
-                  <strong><papertitle class=blue><a href="https://arxiv.org/abs/2212.03814">iQuery: Instruments as Queries for Audio-Visual Sound Separation</a></papertitle></strong>
-                  <br>Jiaben Chen, Renrui Zhang, Dongze Lian, Jiaqi Yang, <strong>Ziyao Zeng</strong>, Jianbo Shi<br>
-                  <span>CVPR 2023</span><br>
-                  <a href="https://github.com/JiabenChen/iQuery">code</a>
-                </div>
-              </div>
-              <br>
-
-
-
-
-              <hr>
-                <div class="resume-content mr-auto">
-                  <img src="research/icon/depthclip.png" alt="PontTrust" align="middle" style="width: 70%;display:block;margin-left: auto;margin-right: auto;">
-                  <br />
-                  <div class="highlight-entry">
-                    <strong><papertitle class=blue><a href="https://arxiv.org/abs/2207.01077">Can Language Understand Depth?</a></papertitle></strong>
-                    <br>Renrui Zhang*, <strong>Ziyao Zeng*</strong>, Ziyu Guo, Yafeng Li<br>
-                    <span>ACM Multimedia 2022, accepted as Brave New Idea (Accepte Rate<=12.5%)</span><br>
-                    <a href="https://github.com/Adonis-galaxy/DepthCLIP">code</a>
-                  </div>
-                </div>
-              <br>
-
-
-
-              <h5>2021</h5>
-                <hr>
-                <div class="resume-item d-flex flex-column flex-md-row">
-                  <div class="resume-content mr-auto">
-                    <img src="research/icon/dspoint.png" alt="PontTrust" align="middle" style="width: 70%;display:block;margin-left: auto;margin-right: auto;">
-                    <br />
-                    <strong><papertitle class=blue><a href="https://arxiv.org/abs/2111.10332">DSPoint: Dual-scale Point Cloud Recognition with High-frequency Fusion</a></papertitle></strong>
-                    <br>Renrui Zhang*, <strong>Ziyao Zeng*</strong>, Ziyu Guo, Xinben Gao, Kexue Fu, Jianbo Shi <br>
-                    <span>SMC 2023</span><br>
-                    <a href="https://github.com/Adonis-galaxy/DSPoint">code</a>
-                  </div>
-                </div>
-                <br>
-
-
-                <hr>
-                <div class="resume-item d-flex flex-column flex-md-row">
-                  <div class="resume-content mr-auto">
-                    <img src="research/icon/vtclip.png" alt="PontTrust" align="middle" style="width: 70%;display:block;margin-left: auto;margin-right: auto;">
-                    <br />
-                    <strong><papertitle class=blue><a href="https://arxiv.org/abs/2112.02399">VT-CLIP: Enhancing Vision-Language Models with Visual-guided Texts</a></papertitle></strong>
-                    <br>Longtian Qiu, Renrui Zhang, Ziyu Guo, <strong>Ziyao Zeng</strong>, Yafeng Li, Guangnan Zhang<br>
-                    <span>arXiv technical report, 2021</span><br>
-                  </div>
-                </div>
-                <br>
-
-
-                <hr>
-                <div class="resume-item d-flex flex-column flex-md-row">
-                  <div class="resume-content mr-auto">
-                    <img src="research/icon/AIFinal.png" alt="PontTrust" align="middle" style="width: 70%;display:block;margin-left: auto;margin-right: auto;">
-                    <br />
-                    <strong><papertitle class=blue><a href="research/AI_CS181_project.pdf">Twitter Emotion Classification</a></papertitle></strong>
-                    <br>Yiteng Xu*, <strong>Ziyao Zeng*</strong>, Jirui Shi*, Shaoxun Wu*, Peiyan Gu*<br>
-                    <span>Final Project of CS181 Artificial Intelligence, 2021 Fall, ShanghaiTech University</span><br>
-                    <a href="https://github.com/Adonis-galaxy/Twitter-Emotion-Classification">code</a>
-                   </div>
-                </div>
-                <br>
-
-                <hr>
-                <div class="resume-item d-flex flex-column flex-md-row">
-                  <div class="resume-content mr-auto">
-                    <img src="research/icon/MLFinal.png" alt="PontTrust" align="middle" style="width: 70%;display:block;margin-left: auto;margin-right: auto;">
-                    <br />
-                    <strong><papertitle class=blue><a href="research/ML_CS282_project.pdf">Generalized DUQ: Generalized Deterministic Uncertainty Quantification</a></papertitle></strong>
-                    <br>Zhitong Gao*, <strong>Ziyao Zeng*</strong><br>
-                    <span>Final Project of CS282 Machine Learning, 2021 Spring, ShanghaiTech University</span><br>
-                  </div>
-                </div>
-                <br>
-
-              <h5>2020</h5>
-
-                <hr>
-                <div class="resume-item d-flex flex-column flex-md-row">
-                  <div class="resume-content mr-auto">
-                    <img src="research/icon/DLFinal.png" alt="PontTrust" align="middle" style="width: 70%;display:block;margin-left: auto;margin-right: auto;">
-                    <br />
-                    <strong><papertitle class=blue><a href="research/DL_CS280_project.pdf">Seek Common while Shelving Differences: A New Way for dealing with Noisy Labels</a></papertitle></strong>
-                    <br>Zhitong Gao*, <strong>Ziyao Zeng*</strong><br>
-                    <span>Final Project of CS280 Deep Learning, 2020 Fall, ShanghaiTech University</span><br>
-                  </div>
-                </div>
-                <br>
-
+            <p>I conduct research on <strong>Multimodal Learning</strong> inspired by human cognition towards <strong>Multimodal Agentic AI</strong>, especially <strong>vision-language models</strong> and <strong>spatial understanding</strong>. My line of work in <em>"Language for 3D Vision"</em> explores <u>how vision-language models can perceive and understand the world like humans do</u>. My expertise lies in vision-language models, large-language models, diffusion models, multimodal learning, and 2D/3D computer vision.</p>
           </div>
 
-          <!-- Adventure -->
-          <div class="tab-pane fade" id="adventure" role="tabpanel" aria-labelledby="adventure-tab">
-            <h4 style="margin-top: 10px">My Adventure</h4>
-
-                  <li>I am a big fan of adventure who is enthusiastic about cycling, hiking and mountain climbing.</li>
-                  <li>"Being a scientist and an adventurer has a lot of similarities, they both want to achieve something that hasn't been achieved before."</li>
-                  <li>In 2015, I have hiked across Lake District of England in 1 week.</li>
-                  <img style="width:32%;max-width:100%" align="middle" src="images/lakedistrict/DSC_0015.JPG">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/lakedistrict/DSC_1167.JPG">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/lakedistrict/DSC_1442.JPG">
-                  <li>In 2019, I have cycled cross Tibet for 28 days from <a href="https://sco.wikipedia.org/wiki/Chengdu">Chengdu</a> to <a href="https://de.wikipedia.org/wiki/Lhasa">Lhasa</a> for 2135 km.</li>
-                  <p></p>
-                  <img style="width:97%;max-width:100%" align="middle" src="images/318/qixingluxian.jpg">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/318/zhongdian.jpg">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/318/mila.jpg">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/318/chuanzang3.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/318/bingchuan.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/318/3838.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/318/chuanzang1.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/318/dongda.jpg">
-                  <p></p>
-                  <li>In 2022, I have cycled cross Tibet and Xinjiang for 1 month from <a href=“https://en.wikipedia.org/wiki/%C3%9Cr%C3%BCmqi”>Ürümqi</a> to <a href="https://de.wikipedia.org/wiki/Lhasa">Lhasa</a> for 5000 km, with about 2000 km cycling at an average altitude of 4500 m.</li>
-                  <p></p>
-                  <img style="width:32%;max-width:100%" align="middle" src="images/xinzangxian/plan.jpg">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/xinzangxian/qidian.jpg">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/xinzangxian/binhe.jpg">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/xinzangxian/shanding.jpg">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/xinzangxian/swim.jpg">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/xinzangxian/zhufeng.jpg">
-
-                  <img style="width:24%;max-width:100%" align="middle" src="images/xinzangxian/zhongdian.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/xinzangxian/daban.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/xinzangxian/gangrenboqi.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/xinzangxian/zhuanshan.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/xinzangxian/zipai.jpg">
-
-                  <img style="width:24%;max-width:100%" align="middle" src="images/xinzangxian/lasa.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/xinzangxian/zhengshuheying.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/xinzangxian/zhengshu.jpg">
-                  <p></p>
-                  <li>In 2023, I hiked in <a href="https://www.chinadiscovery.com/yunnan/yubeng-village.html">Yubeng Village</a> for 5 days, across an altitude between 3000 m to 4300 m.</li>
-                  <img style="width:32%;max-width:100%" align="middle" src="images/yubeng/1.jpg">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/yubeng/2.jpg">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/yubeng/3.jpg">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/yubeng/4.jpg">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/yubeng/5.jpg">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/yubeng/6.jpg">
-                  <p></p>
-                  My hiking video in Ice Lake, 3700 m altitude <a href="https://youtu.be/_sd_18dW6IA">Link</a>
-                  <p></p>
-                  My hiking video in God Lake, 4300 m altitude: <a href="https://youtube.com/shorts/tSl27ym758s">Link</a>
-                  <p></p>
-                  <li>In 2023, I hiked in <a href="https://en.wikipedia.org/wiki/Tiger_Leaping_Gorge">Tiger Leaping Gorge</a> High Road for 2 days.</li>
-                  <img style="width:32%;max-width:100%" align="middle" src="images/TLG/tlg1.jpg">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/TLG/tlg2.jpg">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/TLG/tlg3.jpg">
-                  <p></p>
-                  <p></p>
-
-                  <li>In 2023, I cycle around <a href="https://en.wikipedia.org/wiki/Qinghai_Lake">Qinghai Lake</a> more than 350 km for 4 days .</li>
-                  <img style="width:24%;max-width:100%" align="middle" src="images/qinghai/IMG_0171.JPG">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/qinghai/IMG_0172.JPG">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/qinghai/IMG_0173.JPG">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/qinghai/IMG_0174.JPG">
-
-                  <li>In 2024, I got my diving certificate in the Red Sea.</li>
-                  <img style="width:32%;max-width:100%" align="middle" src="images/diving/IMG_9411.JPG">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/diving/IMG_9412.JPG">
-                  <img style="width:32%;max-width:100%" align="middle" src="images/diving/IMG_9414.JPG">
-                  <p></p>
-
-                  <li>In 2024, sucessfully climbed to the top of Mount Yuzhu, 6178 meters in altitude.</li>
-                  <img style="width:24%;max-width:100%" align="middle" src="images/yuzhu/yuzhu_1.png">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/yuzhu/yuzhu_2.png">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/yuzhu/yuzhu_3.png">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/yuzhu/yuzhu_4.png">
-                  <p></p>
-
-                  <li>In 2025 summer, I drove from Yale (CT) to Nvidia (CA) across US for my summer internship in 10 days, then drove back in 14 days. Along the way, I traveled through 22 states and visited 9 national parks.</li>
-                  <li>I recently got my temporary student pilot license in Nov. 2025 issued by FAA, looking forward my solo flight!</li>
-
-
-                  <p></p>
-                  <li>My other photos regarding adventures.</li>
-                  <img style="width:24%;max-width:100%" align="middle" src="images/others/zengzy.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/others/cover.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/others/dongshan.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/others/changsha.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/others/meili.jpg">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/others/Paris.JPG">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/others/Karak.JPG">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/others/Maroc.JPG">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/others/ski.JPG">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/others/Egypt.JPG">
-                  <img style="width:24%;max-width:100%" align="middle" src="images/others/ballon.JPG">
-                  <p></p>
-
-
-
+          <div class="hero-links">
+            <a href="https://scholar.google.com/citations?hl=en&user=FYL2DYEAAAAJ" class="link-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+              Google Scholar
+            </a>
+            <a href="http://www.linkedin.com/in/ziyao-zeng-52372a29b" class="link-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/Adonis-galaxy" class="link-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              GitHub
+            </a>
+            <a href="mailto:ziyao.zeng@yale.edu" class="link-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              Email
+            </a>
           </div>
-          <!-- Others about me -->
-      <div class="tab-pane fade" id="others" role="tabpanel" aria-labelledby="others-tab">
-            <h4 style="margin-top: 10px">Other things about myself</h4>
-            <p>
-              <li>I'm an amateur Unity game developer, previous supervised by <a href="http://www.briancox.be/?page=home">Brain Cox</a>, screenshots of my previous works have been shown below.</li>
-              <li>Snow Ranger</li>
-              <img style="max-width:50%" align="middle" src="images/Unity/Unity_HW2.png">
-              <li><a href="https://www.bilibili.com/video/BV1WS4y1Z7rz?p=1&share_medium=ipad&share_plat=ios&share_source=QQ&share_tag=s_i&timestamp=1641184133&unique_k=GHTLVUs">Darkside</a></li>
-              <img style="max-width:33%" align="middle" src="images/Unity/main_menu.jpg">
-              <img style="max-width:33%" align="middle" src="images/Unity/night_vision.jpg">
-              <img style="max-width:33%" align="middle" src="images/Unity/puzzle.jpg">
 
-            </p>
-            <hr />
-            <p>
-              <li>I'm also an amateur pianist, trombone player, guitar player, and Chinese folk signer.</li>
-              <li>I have been playing Tarot since 2014, dedicating to combining Tarot with modern psychology to serve as a tool for consciousness.</li>
-            </p>
-            <hr /> <!-- A line-->
-            <p>
-              <li>Previously, I volunteered at <a href="http://www.wwfchina.org/">WWF-China</a> and <a href="http://www.greenpeace.org.cn/">Greenpeace</a></li>
-            </p>
+          <div class="collaborators-section">
+            <h3>Collaborators</h3>
+            <div class="collaborators-grid">
+              <div class="collab-group">
+                <strong>Nvidia Research</strong>
+                <div class="collab-links">
+                  <a href="https://oraziogallo.github.io/">Dr. Orazio Gallo</a>,
+                  <a href="https://suhangpro.github.io/">Dr. Hang Su</a>,
+                  <a href="https://www.jindongjiang.me/">Dr. Jindong Jiang</a>,
+                  <a href="https://research.nvidia.com/person/abhishek-badki">Dr. Abhishek Badki</a>,
+                  <a href="https://sifeiliu.net/">Dr. Sifei Liu</a>
+                </div>
+              </div>
+              <div class="collab-group">
+                <strong>Yale Vision Lab</strong>
+                <div class="collab-links">
+                  <a href="https://www.cs.yale.edu/homes/wong-alex/">Prof. Alex Wong</a>,
+                  <a href="https://donglao.github.io/">Prof. Dong Lao</a>,
+                  <a href="https://www.image.cau.ac.kr/people/director">Prof. Byung-Woo Hong</a>,
+                  <a href="https://web.cs.ucla.edu/~soatto/">Prof. Stefano Soatto</a>
+                </div>
+              </div>
+              <div class="collab-group">
+                <strong>UPenn GRASP Lab</strong>
+                <div class="collab-links">
+                  <a href="https://www.cis.upenn.edu/~jshi/">Prof. Jianbo Shi</a>,
+                  <a href="https://zrrskywalker.github.io/">Dr. Renrui Zhang</a>
+                </div>
+              </div>
+              <div class="collab-group">
+                <strong>ShanghaiTech PLUS Group</strong>
+                <div class="collab-links">
+                  <a href="https://xmhe.bitbucket.io/">Prof. Xuming He</a>,
+                  <a href="https://gaozhitong.github.io/">Zhitong Gao</a>
+                </div>
+              </div>
+            </div>
+            <p class="collab-note">I was also fortunate to intern at <a href="https://www.shlab.org.cn/">Shanghai AI Lab</a> and <a href="https://www.uisee.com/en/">UISEE</a> during my undergraduate studies.</p>
+          </div>
+
+          <div class="reviewer-section">
+            <h3>Reviewer Services</h3>
+            <p>CVPR (2022, 2025 <strong>[Outstanding Reviewer]</strong>, 2026), ICCV (2023, 2025), ECCV (2024), ICML (2025), ICLR (2025, 2026), NeurIPS (2024, 2025), ACM MM (2023, 2025), AISTATS (2024, 2025), ICASSP (2024, 2025), TCSVT (journal)</p>
+          </div>
         </div>
 
-          <!-- Ending -->
+        <div class="hero-image">
+          <img src="images/cover_full_body.jpg" alt="Ziyao Zeng" class="profile-img">
         </div>
       </div>
-    <br>
-    <br>
+    </div>
+  </section>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<!-- <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=yuoBMXDrKL-QBzjeq858G6uTHIVF7jwRwEfLziX7UYU"></script> -->
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=300&t=tt&d=yuoBMXDrKL-QBzjeq858G6uTHIVF7jwRwEfLziX7UYU&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
+  <!-- Research Section -->
+  <section id="research" class="research-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Research</h2>
+        <p class="section-subtitle">Multimodal Learning towards Multimodal Agentic AI</p>
+      </div>
 
+      <div class="research-overview">
+        <p>Since the age of 13, deeply touched by <em><a href="https://en.wikipedia.org/wiki/Foundation_(Asimov_novel)">Foundation</a></em> by <a href="https://en.wikipedia.org/wiki/Isaac_Asimov">Isaac Asimov</a>, my dream has been to create an AI who can think like humans (just like the dream of <a href="https://people.idsia.ch//~juergen/">Prof. Jürgen Schmidhuber</a>). When humans perceive the surrounding environment, we see (2D vision), hear (audio), feel (tactile), and interact (3D vision) simultaneously to reason (language) and understand (neural signal) the world. Therefore, I conduct research on <strong>Multimodal Learning</strong> towards <strong>Multimodal Agentic AI</strong>. My research vision is to empower agentic AI with multimodal sensing and multimodal representations, enabling it to perceive, reason, understand, and interact with both the digital and physical worlds like humans do.</p>
+        <p>Specifically, my line of work in <em>"Language for 3D Vision"</em> (DepthCLIP, PointCLIPv2, WorDepth, RSA, Iris) explores <u>how vision-language models can perceive and understand the world like humans do</u>.</p>
+      </div>
+
+      <div class="publications-header">
+        <h3>Publications</h3>
+        <p class="highlight-notice">Selected publications are highlighted.</p>
+        <p class="contribution-note">(* indicates equal contributions)</p>
+      </div>
+
+      <!-- 2025 -->
+      <div class="year-section">
+        <h4 class="year-title">2025</h4>
+
+        <div class="publication-card highlight">
+          <div class="pub-image">
+            <img src="research/icon/Coffee.png" alt="Coffee">
+          </div>
+          <div class="pub-content">
+            <h5 class="pub-title"><a href="https://arxiv.org/abs/2511.14113">Coffee: Controllable Diffusion Fine-tuning</a></h5>
+            <p class="pub-authors"><strong>Ziyao Zeng</strong>, Jingcheng Ni, Ruyi Liu, Alex Wong</p>
+            <p class="pub-venue">arXiv technical report, 2025</p>
+          </div>
+        </div>
+
+        <div class="publication-card">
+          <div class="pub-image">
+            <img src="research/icon/ETA.png" alt="ETA">
+          </div>
+          <div class="pub-content">
+            <h5 class="pub-title"><a href="https://arxiv.org/abs/2508.05989">ETA: Energy-based Test-time Adaptation for Depth Completion</a></h5>
+            <p class="pub-authors">Younjoon Chung*, Hyoungseob Park*, Patrick Rim*, Xiaoran Zhang, Jihe He, <strong>Ziyao Zeng</strong>, Safa Cicek, Byung-Woo Hong, James S. Duncan, Alex Wong</p>
+            <p class="pub-venue">ICCV 2025</p>
+          </div>
+        </div>
+
+        <div class="publication-card">
+          <div class="pub-image">
+            <img src="research/icon/ProtoDepth.png" alt="ProtoDepth">
+          </div>
+          <div class="pub-content">
+            <h5 class="pub-title"><a href="https://arxiv.org/abs/2503.12745">ProtoDepth: Unsupervised Continual Depth Completion with Prototypes</a></h5>
+            <p class="pub-authors">Patrick Rim, Hyoungseob Park, S. Gangopadhyay, <strong>Ziyao Zeng</strong>, Younjoon Chung, Alex Wong</p>
+            <p class="pub-venue">CVPR 2025 | <a href="https://protodepth.github.io/">project page</a>, <a href="https://github.com/patrickqrim/ProtoDepth">code</a></p>
+          </div>
+        </div>
+
+        <div class="publication-card">
+          <div class="pub-image">
+            <img src="research/icon/HOMER.png" alt="HOMER">
+          </div>
+          <div class="pub-content">
+            <h5 class="pub-title"><a href="https://arxiv.org/abs/2501.17636">HOMER: Homography-Based Efficient Multi-view 3D Object Removal</a></h5>
+            <p class="pub-authors">Jingcheng Ni*, Weiguang Zhao*, Daniel Wang, <strong>Ziyao Zeng</strong>, Chenyu You, Alex Wong, Kaizhu Huang</p>
+            <p class="pub-venue">arXiv technical report, 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2024 -->
+      <div class="year-section">
+        <h4 class="year-title">2024</h4>
+
+        <div class="publication-card highlight">
+          <div class="pub-image">
+            <img src="research/icon/Iris.png" alt="Iris">
+          </div>
+          <div class="pub-content">
+            <h5 class="pub-title"><a href="https://www.arxiv.org/abs/2411.16750">Iris: Integrating Language into Diffusion-based Monocular Depth Estimation</a></h5>
+            <p class="pub-authors"><strong>Ziyao Zeng*</strong>, Jingcheng Ni*, Daniel Wang, Patrick Rim, Younjoon Chung, Fengyu Yang, Byung-Woo Hong, Alex Wong</p>
+            <p class="pub-venue">arXiv technical report, 2024 | <a href="https://necv2025.github.io/">NECV 2025 Oral Presentation (18.75%)</a></p>
+          </div>
+        </div>
+
+        <div class="publication-card highlight">
+          <div class="pub-image">
+            <img src="research/icon/RSA.png" alt="RSA">
+          </div>
+          <div class="pub-content">
+            <h5 class="pub-title"><a href="http://arxiv.org/abs/2410.02924">RSA: Resolving Scale Ambiguities in Monocular Depth Estimators through Language Descriptions</a></h5>
+            <p class="pub-authors"><strong>Ziyao Zeng</strong>, Yangchao Wu, Hyoungseob Park, Daniel Wang, Fengyu Yang, Stefano Soatto, Dong Lao, Byung-Woo Hong, Alex Wong</p>
+            <p class="pub-venue">NeurIPS 2024 | <a href="https://github.com/Adonis-galaxy/RSA">code</a></p>
+          </div>
+        </div>
+
+        <div class="publication-card">
+          <div class="pub-image">
+            <img src="research/icon/NeuroBind.png" alt="NeuroBind">
+          </div>
+          <div class="pub-content">
+            <h5 class="pub-title"><a href="https://arxiv.org/abs/2407.14020">NeuroBind: Towards Unified Multimodal Representations for Neural Signals</a></h5>
+            <p class="pub-authors">Fengyu Yang*, Chao Feng*, Daniel Wang*, Tianye Wang, <strong>Ziyao Zeng</strong>, Zhiyang Xu, Hyoungseob Park, Pengliang Ji, Hanbin Zhao, Yuanning Li, Alex Wong</p>
+            <p class="pub-venue">arXiv technical report, 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2023 -->
+      <div class="year-section">
+        <h4 class="year-title">2023</h4>
+
+        <div class="publication-card highlight">
+          <div class="pub-image">
+            <img src="research/icon/WorDepth.png" alt="WorDepth">
+          </div>
+          <div class="pub-content">
+            <h5 class="pub-title"><a href="https://arxiv.org/abs/2404.03635">WorDepth: Variational Language Prior for Monocular Depth Estimation</a></h5>
+            <p class="pub-authors"><strong>Ziyao Zeng</strong>, Daniel Wang, Fengyu Yang, Hyoungseob Park, Yangchao Wu, Stefano Soatto, Byung-Woo Hong, Dong Lao, Alex Wong</p>
+            <p class="pub-venue">CVPR 2024 | <a href="https://github.com/Adonis-galaxy/WorDepth">code</a></p>
+          </div>
+        </div>
+
+        <div class="publication-card">
+          <div class="pub-image">
+            <img src="research/icon/UniTouch.png" alt="UniTouch">
+          </div>
+          <div class="pub-content">
+            <h5 class="pub-title"><a href="https://arxiv.org/abs/2401.18084">Binding Touch to Everything: Learning Unified Multimodal Tactile Representations</a></h5>
+            <p class="pub-authors">Fengyu Yang*, Chao Feng*, Ziyang Chen*, Hyoungseob Park, Daniel Wang, Yiming Dou, <strong>Ziyao Zeng</strong>, Xien Chen, Rit Gangopadhyay, Andrew Owens, Alex Wong</p>
+            <p class="pub-venue">CVPR 2024 | <a href="https://cfeng16.github.io/UniTouch/">project page</a>, <a href="https://github.com/cfeng16/UniTouch">code</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2022 -->
+      <div class="year-section">
+        <h4 class="year-title">2022</h4>
+
+        <div class="publication-card highlight">
+          <div class="pub-image">
+            <img src="research/icon/PointCLIPv2.png" alt="PointCLIPv2">
+          </div>
+          <div class="pub-content">
+            <h5 class="pub-title"><a href="https://arxiv.org/abs/2211.11682">PointCLIP V2: Prompting CLIP and GPT for Powerful 3D Open-world Learning</a></h5>
+            <p class="pub-authors">Xiangyang Zhu*, Renrui Zhang*, Bowei He, Ziyu Guo, <strong>Ziyao Zeng</strong>, Zipeng Qin, Shanghang Zhang, Peng Gao</p>
+            <p class="pub-venue">ICCV 2023 | <a href="https://github.com/yangyangyang127/PointCLIP_V2">code</a></p>
+          </div>
+        </div>
+
+        <div class="publication-card">
+          <div class="pub-image">
+            <img src="research/icon/iQuery.png" alt="iQuery">
+          </div>
+          <div class="pub-content">
+            <h5 class="pub-title"><a href="https://arxiv.org/abs/2212.03814">iQuery: Instruments as Queries for Audio-Visual Sound Separation</a></h5>
+            <p class="pub-authors">Jiaben Chen, Renrui Zhang, Dongze Lian, Jiaqi Yang, <strong>Ziyao Zeng</strong>, Jianbo Shi</p>
+            <p class="pub-venue">CVPR 2023 | <a href="https://github.com/JiabenChen/iQuery">code</a></p>
+          </div>
+        </div>
+
+        <div class="publication-card highlight">
+          <div class="pub-image">
+            <img src="research/icon/depthclip.png" alt="DepthCLIP">
+          </div>
+          <div class="pub-content">
+            <h5 class="pub-title"><a href="https://arxiv.org/abs/2207.01077">Can Language Understand Depth?</a></h5>
+            <p class="pub-authors">Renrui Zhang*, <strong>Ziyao Zeng*</strong>, Ziyu Guo, Yafeng Li</p>
+            <p class="pub-venue">ACM Multimedia 2022, accepted as Brave New Idea (Accepte Rate<=12.5%) | <a href="https://github.com/Adonis-galaxy/DepthCLIP">code</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2021 -->
+      <div class="year-section">
+        <h4 class="year-title">2021</h4>
+
+        <div class="publication-card">
+          <div class="pub-image">
+            <img src="research/icon/dspoint.png" alt="DSPoint">
+          </div>
+          <div class="pub-content">
+            <h5 class="pub-title"><a href="https://arxiv.org/abs/2111.10332">DSPoint: Dual-scale Point Cloud Recognition with High-frequency Fusion</a></h5>
+            <p class="pub-authors">Renrui Zhang*, <strong>Ziyao Zeng*</strong>, Ziyu Guo, Xinben Gao, Kexue Fu, Jianbo Shi</p>
+            <p class="pub-venue">SMC 2023 | <a href="https://github.com/Adonis-galaxy/DSPoint">code</a></p>
+          </div>
+        </div>
+
+        <div class="publication-card">
+          <div class="pub-image">
+            <img src="research/icon/vtclip.png" alt="VT-CLIP">
+          </div>
+          <div class="pub-content">
+            <h5 class="pub-title"><a href="https://arxiv.org/abs/2112.02399">VT-CLIP: Enhancing Vision-Language Models with Visual-guided Texts</a></h5>
+            <p class="pub-authors">Longtian Qiu, Renrui Zhang, Ziyu Guo, <strong>Ziyao Zeng</strong>, Yafeng Li, Guangnan Zhang</p>
+            <p class="pub-venue">arXiv technical report, 2021</p>
+          </div>
+        </div>
+
+        <div class="publication-card">
+          <div class="pub-image">
+            <img src="research/icon/AIFinal.png" alt="Twitter Emotion">
+          </div>
+          <div class="pub-content">
+            <h5 class="pub-title"><a href="research/AI_CS181_project.pdf">Twitter Emotion Classification</a></h5>
+            <p class="pub-authors">Yiteng Xu*, <strong>Ziyao Zeng*</strong>, Jirui Shi*, Shaoxun Wu*, Peiyan Gu*</p>
+            <p class="pub-venue">Final Project of CS181 Artificial Intelligence, 2021 Fall, ShanghaiTech University | <a href="https://github.com/Adonis-galaxy/Twitter-Emotion-Classification">code</a></p>
+          </div>
+        </div>
+
+        <div class="publication-card">
+          <div class="pub-image">
+            <img src="research/icon/MLFinal.png" alt="Generalized DUQ">
+          </div>
+          <div class="pub-content">
+            <h5 class="pub-title"><a href="research/ML_CS282_project.pdf">Generalized DUQ: Generalized Deterministic Uncertainty Quantification</a></h5>
+            <p class="pub-authors">Zhitong Gao*, <strong>Ziyao Zeng*</strong></p>
+            <p class="pub-venue">Final Project of CS282 Machine Learning, 2021 Spring, ShanghaiTech University</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2020 -->
+      <div class="year-section">
+        <h4 class="year-title">2020</h4>
+
+        <div class="publication-card">
+          <div class="pub-image">
+            <img src="research/icon/DLFinal.png" alt="Noisy Labels">
+          </div>
+          <div class="pub-content">
+            <h5 class="pub-title"><a href="research/DL_CS280_project.pdf">Seek Common while Shelving Differences: A New Way for dealing with Noisy Labels</a></h5>
+            <p class="pub-authors">Zhitong Gao*, <strong>Ziyao Zeng*</strong></p>
+            <p class="pub-venue">Final Project of CS280 Deep Learning, 2020 Fall, ShanghaiTech University</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Others Section -->
+  <section id="others" class="others-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Others</h2>
+      </div>
+
+      <div class="others-content">
+        <div class="others-item">
+          <h3>Unity Game Development</h3>
+          <p>I'm an amateur Unity game developer, previous supervised by <a href="http://www.briancox.be/?page=home">Brain Cox</a>, screenshots of my previous works have been shown below.</p>
+
+          <div class="game-showcase">
+            <div class="game-item">
+              <h4>Snow Ranger</h4>
+              <img src="images/Unity/Unity_HW2.png" alt="Snow Ranger" class="game-img">
+            </div>
+            <div class="game-item">
+              <h4><a href="https://www.bilibili.com/video/BV1WS4y1Z7rz?p=1&share_medium=ipad&share_plat=ios&share_source=QQ&share_tag=s_i&timestamp=1641184133&unique_k=GHTLVUs">Darkside</a></h4>
+              <div class="game-screenshots">
+                <img src="images/Unity/main_menu.jpg" alt="Darkside Main Menu" class="game-img-small">
+                <img src="images/Unity/night_vision.jpg" alt="Darkside Night Vision" class="game-img-small">
+                <img src="images/Unity/puzzle.jpg" alt="Darkside Puzzle" class="game-img-small">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="others-item">
+          <h3>Music & Arts</h3>
+          <p>I'm also an amateur pianist, trombone player, guitar player, and Chinese folk singer.</p>
+          <p>I have been playing Tarot since 2014, dedicating to combining Tarot with modern psychology to serve as a tool for consciousness.</p>
+        </div>
+
+        <div class="others-item">
+          <h3>Volunteering</h3>
+          <p>Previously, I volunteered at <a href="http://www.wwfchina.org/">WWF-China</a> and <a href="http://www.greenpeace.org.cn/">Greenpeace</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-note">Website format from <a href="https://www.cs.utexas.edu/~zhouxy/#publication">Xingyi Zhou</a>.</p>
+        <p class="footer-update">Last updated Nov. 2025</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Visitor Counter - light background so widget is visible -->
+  <div class="visitor-counter-wrap">
+    <div class="container">
+      <p class="visitor-counter-label">Page views</p>
+      <div class="visitor-counter">
+        <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=300&t=tt&d=yuoBMXDrKL-QBzjeq858G6uTHIVF7jwRwEfLziX7UYU&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Smooth scroll navigation
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+          const offset = 80;
+          const targetPosition = targetSection.offsetTop - offset;
+
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+
+          // Update active nav link
+          document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+          this.classList.add('active');
+        }
+      });
+    });
+
+    // Update active nav on scroll
+    window.addEventListener('scroll', function() {
+      const sections = ['home', 'research', 'others'];
+      const scrollPosition = window.pageYOffset + 150;
+
+      sections.forEach(sectionId => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            document.querySelectorAll('.nav-link').forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === '#' + sectionId) {
+                link.classList.add('active');
+              }
+            });
+          }
+        }
+      });
+    });
+  </script>
 </body>
-
 </html>
