@@ -348,9 +348,8 @@ code, pre {
 
 /* Publication Cards */
 .publication-card {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
   padding: 2rem;
   margin-bottom: 2rem;
   background: var(--bg-light);
@@ -375,17 +374,29 @@ code, pre {
   color: #000;
 }
 
+/* Image above title, white background, larger for long figures */
 .pub-image {
   display: flex;
   align-items: center;
   justify-content: center;
+  order: -1;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px var(--shadow);
 }
 
 .pub-image img {
-  width: 100%;
-  max-width: 180px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px var(--shadow);
+  width: auto;
+  max-width: 100%;
+  height: 180px;
+  min-width: 400px;
+  max-width: 1000px;
+  border-radius: 4px;
+  object-fit: contain;
+  object-position: center;
 }
 
 .pub-content {
@@ -588,10 +599,6 @@ code, pre {
     font-size: 1.5rem;
   }
 
-  .publication-card {
-    grid-template-columns: 150px 1fr;
-    gap: 1.5rem;
-  }
 }
 
 @media (max-width: 768px) {
@@ -623,13 +630,18 @@ code, pre {
   }
 
   .publication-card {
-    grid-template-columns: 1fr;
-    text-align: center;
+    padding: 1.5rem;
   }
 
   .pub-image {
-    margin: 0 auto;
-    max-width: 200px;
+    padding: 1rem;
+    min-width: 0;
+  }
+
+  .pub-image img {
+    min-width: 0;
+    max-width: 100%;
+    height: 300px;
   }
 
   .collaborators-grid {
@@ -664,8 +676,9 @@ code, pre {
     justify-content: center;
   }
 
-  .publication-card {
-    padding: 1.5rem;
+  .pub-image img {
+    max-width: 100%;
+    height: 260px;
   }
 }
 
