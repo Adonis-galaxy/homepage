@@ -143,6 +143,14 @@ code, pre {
   margin-bottom: 2rem;
 }
 
+.hero-job-notice {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #dc2626;
+  margin: -1rem 0 2rem;
+  line-height: 1.5;
+}
+
 .institution {
   color: var(--primary);
   font-weight: 600;
