@@ -340,6 +340,14 @@ code, pre {
   font-size: 0.9rem;
 }
 
+.pub-tag-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
 /* Year Sections */
 .year-section {
   margin-bottom: 4rem;
