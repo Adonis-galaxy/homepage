@@ -498,83 +498,80 @@ code, pre {
 /* Others Section */
 /* Blog Section */
 .blog-section {
-  padding: 6rem 0;
+  padding: 4.5rem 0;
   background: var(--bg-light);
+}
+
+.blog-section .section-header {
+  margin-bottom: 2.5rem;
 }
 
 .blog-list {
   max-width: 900px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
-.blog-card {
-  display: block;
-  padding: 2rem;
-  margin-bottom: 2rem;
+.blog-item {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding: 1.1rem 1.5rem;
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 12px;
-  color: var(--text);
   text-decoration: none;
-  transition: all 0.3s;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.blog-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px var(--shadow);
+.blog-item:hover {
   border-color: var(--primary);
+  box-shadow: 0 6px 20px var(--shadow);
 }
 
-.blog-meta {
-  font-size: 0.85rem;
+.blog-date {
+  flex: 0 0 5.5rem;
+  font-size: 0.9rem;
   color: var(--text-light);
-  margin-bottom: 0.5rem;
-}
-
-.blog-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--primary);
-  margin-bottom: 0.75rem;
-}
-
-.blog-summary {
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-}
-
-.blog-stats {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem 2.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.blog-stat {
-  display: flex;
-  flex-direction: column;
-}
-
-.blog-stat-num {
-  font-size: 1.75rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--text);
   font-variant-numeric: tabular-nums;
 }
 
-.blog-stat-label {
-  font-size: 0.85rem;
-  color: var(--text-light);
+.blog-title {
+  flex: 1;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
 }
 
-.blog-read {
-  font-weight: 600;
+.blog-item:hover .blog-title {
   color: var(--primary);
 }
 
-.blog-card:hover .blog-read {
-  text-decoration: underline;
+.blog-arrow {
+  color: var(--text-light);
+  transition: transform 0.2s, color 0.2s;
+}
+
+.blog-item:hover .blog-arrow {
+  color: var(--primary);
+  transform: translateX(4px);
+}
+
+@media (max-width: 600px) {
+  .blog-item {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .blog-date {
+    flex-basis: auto;
+  }
+
+  .blog-arrow {
+    display: none;
+  }
 }
 
 .others-section {
