@@ -206,6 +206,56 @@ code, pre {
 }
 
 /* Collaborators Section */
+/* News Section */
+.news-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: var(--bg-light);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.news-section h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.news-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.news-list li {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.news-date {
+  flex: 0 0 4.75rem;
+  font-weight: 500;
+  color: var(--text-light);
+  font-variant-numeric: tabular-nums;
+}
+
+.news-list a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.news-list a:hover {
+  text-decoration: underline;
+}
+
+.news-section + .collaborators-section {
+  margin-top: 2rem;
+}
+
 .collaborators-section {
   margin-top: 3rem;
   padding: 2rem;
