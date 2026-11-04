@@ -496,9 +496,90 @@ code, pre {
 .tag-robotics   { background: rgba(239, 68, 68, 0.12);  color: #b91c1c; border-color: rgba(239, 68, 68, 0.3); }
 
 /* Others Section */
-.others-section {
+/* Blog Section */
+.blog-section {
   padding: 6rem 0;
   background: var(--bg-light);
+}
+
+.blog-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blog-card {
+  display: block;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px var(--shadow);
+  border-color: var(--primary);
+}
+
+.blog-meta {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.blog-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.blog-summary {
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.blog-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-stat-num {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+.blog-stat-label {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.blog-read {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.blog-card:hover .blog-read {
+  text-decoration: underline;
+}
+
+.others-section {
+  padding: 6rem 0;
+  background: var(--bg);
 }
 
 .others-content {

@@ -20,6 +20,7 @@
       <ul class="nav-links">
         <li><a href="#home" class="nav-link active">Home</a></li>
         <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
         <li><a href="#others" class="nav-link">Others</a></li>
       </ul>
     </div>
@@ -583,6 +584,29 @@
     </div>
   </section>
 
+  <!-- Blog Section -->
+  <section id="blog" class="blog-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Blog</h2>
+      </div>
+
+      <div class="blog-list">
+        <a class="blog-card" href="https://adonis-galaxy.github.io/bliss/#bliss" target="_blank" rel="noopener noreferrer">
+          <p class="blog-meta">Oct 2026 · Experiment report</p>
+          <h3 class="blog-title">Spiritual Bliss Attractor: A Replication</h3>
+          <p class="blog-summary">Thirty open-ended conversations (Gemini 4 with Gemini 4, Gemini 4 with Claude Opus 5.5, and Claude Opus 5.5 with Claude Opus 5.5), with no task and no way to end the chat. Only the Gemini&ndash;Gemini pairs reproduced the &ldquo;spiritual bliss&rdquo; attractor described in the Claude Opus 4 system card.</p>
+          <div class="blog-stats">
+            <div class="blog-stat"><span class="blog-stat-num">30</span><span class="blog-stat-label">conversations</span></div>
+            <div class="blog-stat"><span class="blog-stat-num">3/10</span><span class="blog-stat-label">Gemini&ndash;Gemini reached bliss</span></div>
+            <div class="blog-stat"><span class="blog-stat-num">0/20</span><span class="blog-stat-label">with Claude involved</span></div>
+          </div>
+          <span class="blog-read">Read the report &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- Others Section -->
   <section id="others" class="others-section">
     <div class="container">
@@ -674,7 +698,7 @@
 
     // Update active nav on scroll
     window.addEventListener('scroll', function() {
-      const sections = ['home', 'research', 'others'];
+      const sections = ['home', 'research', 'blog', 'others'];
       const scrollPosition = window.pageYOffset + 150;
 
       sections.forEach(sectionId => {
