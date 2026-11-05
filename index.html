@@ -20,7 +20,6 @@
       <ul class="nav-links">
         <li><a href="#home" class="nav-link active">Home</a></li>
         <li><a href="#research" class="nav-link">Research</a></li>
-        <li><a href="#blog" class="nav-link">Blog</a></li>
         <li><a href="#others" class="nav-link">Others</a></li>
       </ul>
     </div>
@@ -184,6 +183,17 @@
         <p>Since the age of 13, deeply touched by <em><a href="https://en.wikipedia.org/wiki/Foundation_(Asimov_novel)">Foundation</a></em> by <a href="https://en.wikipedia.org/wiki/Isaac_Asimov">Isaac Asimov</a>, my dream has been to create an AI who can think like humans (just like the dream of <a href="https://people.idsia.ch//~juergen/">Prof. Jürgen Schmidhuber</a>). When humans perceive the surrounding environment, we see (vision), hear (audio), feel (tactile) simultaneously to reason (language) and understand (neural signal), then interact (action) with the world. Therefore, I conduct research on <strong>Multimodal Representation Learning</strong> for <strong>Agentic AI</strong>, which spans both embodied agents (robotics) and digital agents (LLM/VLM-based agents). Despite differing in their input modalities and action spaces, they are unified by a common goal: the need to perceive, reason, and act intelligently within their environments.</p>
 
         <p>My key research questions are (1) how to obtain good multimodal representations for agents and robots, and (2) how to use those representations to make agents and robots better perceive, reason, understand, and interact with the world. Specifically, my line of work in <em>"Language for 3D Vision"</em> (DepthCLIP, PointCLIPv2, WorDepth, RSA, Iris) explores <u>how vision-language models can perceive and understand the world like humans do</u>. Besides perceiving and understanding the world, I am exploring predicting the world and acting within it, including world models (DTWM, OpenLongTail, CrashTwin), LLM Agents (RuleSmith, SciAgentArena, CCPO), and 3D visual coding (3DCodeVerse). In the long term, since I want to build an AI who thinks like humans, I also care about AI consciousness and welfare (<a href="https://adonis-galaxy.github.io/bliss/#bliss">spiritual bliss attractor</a>).</p>
+      </div>
+
+      <div class="blog-block" id="blog">
+        <h3>Blog</h3>
+        <div class="blog-list">
+          <a class="blog-item" href="https://adonis-galaxy.github.io/bliss/#bliss" target="_blank" rel="noopener noreferrer">
+            <span class="blog-date">Oct 2026</span>
+            <span class="blog-title">Spiritual Bliss Attractor: A Replication</span>
+            <span class="blog-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
       </div>
 
       <div class="publications-header">
@@ -593,23 +603,6 @@
     </div>
   </section>
 
-  <!-- Blog Section -->
-  <section id="blog" class="blog-section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Blog</h2>
-      </div>
-
-      <div class="blog-list">
-        <a class="blog-item" href="https://adonis-galaxy.github.io/bliss/#bliss" target="_blank" rel="noopener noreferrer">
-          <span class="blog-date">Oct 2026</span>
-          <span class="blog-title">Spiritual Bliss Attractor: A Replication</span>
-          <span class="blog-arrow" aria-hidden="true">&rarr;</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
   <!-- Others Section -->
   <section id="others" class="others-section">
     <div class="container">
@@ -701,7 +694,7 @@
 
     // Update active nav on scroll
     window.addEventListener('scroll', function() {
-      const sections = ['home', 'research', 'blog', 'others'];
+      const sections = ['home', 'research', 'others'];
       const scrollPosition = window.pageYOffset + 150;
 
       sections.forEach(sectionId => {

@@ -547,18 +547,20 @@ code, pre {
 
 /* Others Section */
 /* Blog Section */
-.blog-section {
-  padding: 4.5rem 0;
-  background: var(--bg-light);
+.blog-block {
+  max-width: 900px;
+  margin: 0 auto 4rem;
 }
 
-.blog-section .section-header {
-  margin-bottom: 2.5rem;
+.blog-block h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--text);
 }
 
 .blog-list {
-  max-width: 900px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -569,7 +571,7 @@ code, pre {
   align-items: baseline;
   gap: 1.5rem;
   padding: 1.1rem 1.5rem;
-  background: var(--bg);
+  background: var(--bg-light);
   border: 1px solid var(--border);
   border-radius: 12px;
   text-decoration: none;
@@ -626,7 +628,7 @@ code, pre {
 
 .others-section {
   padding: 6rem 0;
-  background: var(--bg);
+  background: var(--bg-light);
 }
 
 .others-content {
